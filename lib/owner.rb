@@ -1,7 +1,7 @@
 class Owner
   # code goes here
-  attr_accessor :pets, :species, :name
-  attr_reader :all
+  attr_accessor :pets, :name
+  attr_reader :all, :species
 
   @@all = []
 
@@ -33,6 +33,10 @@ class Owner
 
   def self.reset_all
     @@all = []
+  end
+
+  def self.count
+    @@all.size
   end
 
   def say_species
