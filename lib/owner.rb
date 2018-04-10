@@ -42,4 +42,8 @@ class Owner
   def say_species
     "I am a #{species}."
   end
+
+  def list_pets
+    "I have #{@pets[:fishes].size} fish, #{@pets[:dogs].size}, and #{@pets[:cats].size} cat(s)"
+  end
 end
