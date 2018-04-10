@@ -71,4 +71,3 @@ class Owner
     @pets[:dogs] = []
   end
 end
-
